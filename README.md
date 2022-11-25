@@ -1,34 +1,37 @@
 # xuanbing-in-one
 
-An Electron application with Vue
+专属于我自己的软件，也是一个练手的dome
 
-## Recommended IDE Setup
+## 功能
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ ] ui设计
+  - [ ] 主页设计
+- [ ] 主页制作
 
-## Project Setup
 
-### Install
+# 指令
+
+## 依赖拉入
 
 ```bash
-$ npm install
+npm install
 ```
 
-### Development
+## 启动
 
 ```bash
 $ npm run dev
 ```
 
-### Build
+## 分发
 
 ```bash
-# For windows
-$ npm run build:win
+# windows
+npm run build:win
 
-# For macOS
-$ npm run build:mac
+# macOS
+npm run build:mac
 
-# For Linux
-$ npm run build:linux
+# Linux
+npm run build:linux
 ```
