@@ -8,6 +8,7 @@ module.exports = {
     commonjs: true,
     es6: true,
     node: true,
+    endOfLine: 'auto',
     'vue/setup-compiler-macros': true
   },
   parserOptions: {
