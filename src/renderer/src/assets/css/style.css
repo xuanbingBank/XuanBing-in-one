@@ -3,13 +3,16 @@
   font-family: 'pingfang';
   src: url(../fonts/PingFang/Medium.ttf);
 }
-@font-face{
-    font-family: "deyi";
-    src: url(../fonts/SmileySans-Oblique.ttf);
+@font-face {
+  font-family: 'deyi';
+  src: url(../fonts/SmileySans-Oblique.ttf);
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "pingfang";
+  font-family: 'pingfang';
+}
+body {
+  overflow: hidden;
 }
