@@ -103,7 +103,7 @@
   "license": "Apache",
   "devDependencies": {
     "debug": "^4.3.3",
-    "electron": "^21.3.1",
+    "electron": "^15.5.7",
     "electron-builder": "^23.1.0",
     "electron-rebuild": "^3.2.8",
     "eslint": "^5.13.0",
