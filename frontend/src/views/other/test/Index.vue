@@ -2,7 +2,6 @@
   <div id="app-other">
     <div class="one-block-1">
       <span>
-        待开发...
       </span>
     </div>  
     <div class="one-block-2">

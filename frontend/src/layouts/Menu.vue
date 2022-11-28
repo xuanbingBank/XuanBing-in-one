@@ -1,12 +1,17 @@
 <template>
   <a-layout id="app-menu">
-    <a-layout-sider
-      theme="light"
-      class="layout-sider"
-    >
-      <a-menu theme="light" mode="inline" :default-selected-keys="[default_key]" :selected-keys="[current]" @click="menuClick">
+    <a-layout-sider theme="light" class="layout-sider">
+      <a-menu
+        theme="light"
+        mode="inline"
+        :default-selected-keys="[default_key]"
+        :selected-keys="[current]"
+        @click="menuClick"
+      >
         <a-menu-item v-for="(menuInfo, subIndex) in menu" :key="subIndex">
-          <router-link :to="{ name: menuInfo.pageName, params: menuInfo.params}">
+          <router-link
+            :to="{ name: menuInfo.pageName, params: menuInfo.params }"
+          >
             <span>{{ menuInfo.title }}</span>
           </router-link>
         </a-menu-item>
@@ -20,21 +25,21 @@
   </a-layout>
 </template>
 <script>
-import subMenu from '@/config/subMenu'
+import subMenu from "@/config/subMenu";
 
 export default {
   props: {
     id: {
       type: String,
-      default: ''
-    }
+      default: "",
+    },
   },
   data() {
     return {
-      menu:{},
-      default_key: 'menu_100',
-      current: '',
-      keys: []
+      menu: {},
+      default_key: "menu_100",
+      current: "",
+      keys: [],
     };
   },
   watch: {
@@ -42,29 +47,28 @@ export default {
       this.menuHandle();
     },
   },
-  created () {
-  },
-  mounted () {
+  created() {},
+  mounted() {
     this.menuHandle();
   },
   methods: {
-    menuHandle () {
-      this.current = this.default_key; 
+    menuHandle() {
+      this.current = this.default_key;
       switch (this.id) {
-        case 'base' :
+        case "base":
           this.menu = subMenu.base;
           break;
-        case 'other' :
+        case "other":
           this.menu = subMenu.other;
-          break;                                    
+          break;
       }
       const linkInfo = this.menu[this.current];
-      this.$router.push({ name: linkInfo.pageName, params: linkInfo.params});
+      this.$router.push({ name: linkInfo.pageName, params: linkInfo.params });
     },
     menuClick(e) {
       this.current = e.key;
     },
-  }
+  },
 };
 </script>
 <style lang="less" scoped>
@@ -74,7 +78,7 @@ export default {
   .layout-sider {
     border-top: 1px solid #e8e8e8;
     border-right: 1px solid #e8e8e8;
-    background-color: #FAFAFA;
+    background-color: #fafafafa;
     overflow: auto;
   }
 }

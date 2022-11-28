@@ -37,20 +37,20 @@ module.exports = (appInfo) => {
   /**
    * 开发者工具
    */
-  config.openDevTools = false;
+  config.openDevTools = true;
 
   /**
    * 应用程序顶部菜单
    * boolean | string
    * true, false, 'dev-show'(dev环境显示，prod环境隐藏)
    */
-  config.openAppMenu = 'dev-show';
+  config.openAppMenu = 'false';
 
   /**
    * 主窗口
    */
   config.windowsOption = {
-    title: 'EE框架',
+    title: '玄冰是仓鼠',
     width: 980,
     height: 650,
     minWidth: 800,
