@@ -1,6 +1,6 @@
 {
-  "name": "ee",
-  "version": "2.3.0",
+  "name": "玄冰是仓鼠",
+  "version": "0.0.1",
   "description": "A fast, desktop software development framework",
   "main": "main.js",
   "scripts": {
@@ -61,7 +61,7 @@
       "installerHeaderIcon": "./build/icons/icon.ico",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "EE框架"
+      "shortcutName": "玄冰是仓鼠"
     },
     "publish": [
       {
@@ -95,11 +95,11 @@
       "category": "Utility"
     }
   },
-  "repository": "https://github.com/wallace5303/ee.git",
+  "repository": "https://github.com/xuanbingBank/XuanBing-in-one",
   "keywords": [
     "Electron"
   ],
-  "author": "wallace5303, Inc <530353222@qq.com>",
+  "author": "",
   "license": "Apache",
   "devDependencies": {
     "debug": "^4.3.3",
